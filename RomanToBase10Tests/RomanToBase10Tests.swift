@@ -27,7 +27,7 @@ class RomanToBase10Tests: XCTestCase {
         XCTAssert(vc1.conversion(romanNumber: "CVIII") == 108)
         XCTAssert(vc1.conversion(romanNumber: "CVIIIV") == 0)
         XCTAssert(vc1.conversion(romanNumber: "yyyyyy") == 0)
-        XCTAssert(vc1.conversion(romanNumber: "yyy") == 1)
+        XCTAssert(vc1.conversion(romanNumber: "") == 0)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
