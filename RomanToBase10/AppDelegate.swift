@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  RomanToBase10
 //
-//  Created by Vignan Sankati on 4/19/17.
-//  Copyright © 2017 Vignan Sankati. All rights reserved.
+//  Created by Vignan Kumar on 4/20/17.
+//  Copyright © 2017 Vignan Kumar. All rights reserved.
 //
 
 import UIKit

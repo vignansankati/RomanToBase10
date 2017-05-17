@@ -2,8 +2,8 @@
 //  RomanToBase10Tests.swift
 //  RomanToBase10Tests
 //
-//  Created by Vignan Sankati on 4/19/17.
-//  Copyright © 2017 Vignan Sankati. All rights reserved.
+//  Created by Vignan Kumar on 4/20/17.
+//  Copyright © 2017 Vignan Kumar. All rights reserved.
 //
 
 import XCTest
@@ -22,6 +22,11 @@ class RomanToBase10Tests: XCTestCase {
     }
     
     func testExample() {
+        let vc1 = ViewController()
+        // on success returns a number, on failure returns 0
+        XCTAssert(vc1.conversion(romanNumber: "CVIII") == 108)
+        XCTAssert(vc1.conversion(romanNumber: "CVIIIV") == 0)
+        XCTAssert(vc1.conversion(romanNumber: "yyyyyy") == 0)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
