@@ -36,7 +36,11 @@ class ViewController: UIViewController {
     
     @IBAction func convertToBase10(_ sender: Any) {
         validInput = true
-        base10LBL.text = (conversion(romanNumber: romanNumberTF.text!.uppercased())) == 0 ? "Error" : "\(conversion(romanNumber: romanNumberTF.text!.uppercased()))"
+        if romanNumberTF.text == "" {
+            base10LBL.text = "Enter a roman number"
+        } else {
+            base10LBL.text = (conversion(romanNumber: romanNumberTF.text!.uppercased())) == 0 ? "Error" : "\(conversion(romanNumber: romanNumberTF.text!.uppercased()))"
+        }
     }
     
     func getNextToken(romanNumber:String, position:Int ) throws -> Int {
